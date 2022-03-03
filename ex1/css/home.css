@@ -337,7 +337,7 @@ footer ul .footer-title {
 }
 
 @media only screen and (max-width: 580px) {
-  .frames-bottom {
+  /* .frames-bottom {
     top: 0px;
     margin-bottom: 0px;
     left: 0px;
@@ -350,14 +350,20 @@ footer ul .footer-title {
   footer ul {
     margin: 0px 10px;
   }
-}
-@media only screen and (min-width: 280px) and (max-width: 480px) {
+} */
+@media only screen and (min-width: 280px) and (max-width: 580px) {
+    .frames-bottom {
+    top: 0px;
+    margin-bottom: 0px;
+    left: 0px;
+    width: 100%;
+  }
   footer {
     display: grid;
     grid-template-columns: auto auto auto;
   }
   footer ul {
-    margin: 10px;
+    margin: 0px 10px;
   }
   .frames-bottom-wrap-sign-up {
     display: flex;
