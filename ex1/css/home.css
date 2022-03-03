@@ -21,10 +21,10 @@
   color: white;
   padding: 3% 6%;
 }
-.wrap-header.list-header li:hover {
+.wrap-header .list-header li:hover {
   border-bottom: 2px solid orange;
 }
-.wrap-header.fa-circle-down {
+.wrap-header .fa-circle-down {
   color: white;
 }
 .fa-circle-right {
@@ -231,8 +231,8 @@ Body {
 footer {
   background-color: #323339;
   display: flex;
-  justify-content: center;
-  padding: 50px 0px;
+  /* justify-content: center; */
+  padding: 50px 10%;
 }
 footer ul {
   color: white;
@@ -300,25 +300,33 @@ footer ul .footer-title {
     position: fixed;
     left: -100%;
     padding: 0;
+transition: all .4s ease-in-out 0s;
   }
   #check:checked ~ .list-header {
     left: 0;
   }
-  .wrap-header.list-header li:hover {
+  /* .wrap-header.list-header li:hover {
     border-bottom: 2px solid white;
-  }
+  } */
 
   .wrap-header .list-header-button {
     position: absolute;
-    right: 7%;
+    left: 8%;
     z-index: 11;
-    top: -5%;
+    top: 1%;
     font-size: xx-large;
     display: inline-block;
+    color: white;
   }
   #check:checked ~ .list-header-button {
     position: fixed;
   }
+    #check:checked ~ .list-header-button {
+   
+    left: 80%;
+    transition: all .4s ease-in-out 0s;
+  }
+
 
   .wrap-header .list-header-button {
     margin-top: 10%;
@@ -397,5 +405,11 @@ footer ul .footer-title {
   }
   .image-home img {
     height: 40vh;
+  }
+  .icon-header p{
+    width: 80%;
+  }
+  .icon-header h1{
+    width: 100%;
   }
 }
