@@ -598,6 +598,10 @@ footer p {
   footer {
     padding: 50px;
   }
+  .icon-header .text {
+    width: 70%;
+    
+}
 }
 @media only screen and (max-width: 350px) {
   .footer-ul {
