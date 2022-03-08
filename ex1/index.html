@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="./assets/css/home.css" rel="stylesheet" />
-    <script
+    <!-- <script
       src="https://kit.fontawesome.com/795fe8ed4f.js"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
   </head>
   <body>
     <div class="wrap-header">
@@ -19,7 +19,15 @@
       ></label>
 
       <ul class="list-header">
-        <li>ABOUT</li>
+        <li>
+          ABOUT
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+
         <li>PRODUCTS</li>
         <li>PROJECTS</li>
         <li>CONTACT</li>
@@ -72,9 +80,12 @@
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
 
-        <img class="twitter-icon" src="./assets/images/Shape 5.png" />
         <!-- <i class="fa-brands fa-twitter"></i> -->
-        <a>Tweet this shjtt</a>
+        <div class="twitter-icon-wrap">
+          <img class="twitter-icon" src="./assets/images/Shape 5.png" />
+          <span class="twitter-icon-tooltip">hello world!</a></span>
+          <a>Tweet this shjtt</a>
+        </div>
       </div>
     </div>
     <div class="paragraph-home">
@@ -188,17 +199,15 @@
       <div class="frames-bottom-wrap-sign-up">
         <h3>TAKEN ACTION</h3>
         <form>
-         
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Contact Phone" />
-            <input type="text" placeholder="Email" />
-        
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Contact Phone" />
+          <input type="text" placeholder="Email" />
 
           <button type="submit">Sign Up</button>
         </form>
       </div>
-      <div class="image-home">
-        <img src="./assets/images/imagebackground.png" alt="" />
+      <div class="image-home1">
+        <!-- <img src="./assets/images/imagebackground.png" alt="" /> -->
       </div>
       <div class="frames2">
         <div class="side-frames2">
