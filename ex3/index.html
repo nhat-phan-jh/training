@@ -16,19 +16,23 @@
         font-weight: 400;
         font-style: normal;
       }
+      @media only screen and (max-width: 380px) {
+        #bodyTable {
+          width: 100%;
+        }
+      }
     </style>
   </head>
   <body>
-    <table width="375px" style="border: 1px solid grey" align="center">
+    <table
+      id="bodyTable"
+      width="375px"
+      style="border: 1px solid grey"
+      align="center"
+    >
       <tr>
         <td>
-          <table
-            cellpadding="0"
-            cellspacing="0"
-            height="100%"
-            id="bodyTable"
-            align="center"
-          >
+          <table cellpadding="0" cellspacing="0" height="100%" align="center">
             <tr>
               <td align="center" valign="top">
                 <img
@@ -65,7 +69,7 @@
                     Maverick since May 2019
                   </b></i
                 >
-                <h1
+                <p
                   style="
                     font-size: 22px;
                     color: #ffc95d;
@@ -76,7 +80,7 @@
                   "
                 >
                   BE YOURSELF, IT PAYS OFF!
-                </h1>
+                </p>
 
                 <p
                   style="
@@ -101,37 +105,52 @@
               line-height: 18px;
               margin-bottom: 30px;
               font-family: SP-ProText;
+              letter-spacing: 1px;
+              font-weight: 300;
             "
           >
             <tr style="height: 30px; border-top: 20px solid">
-              <th style="border-bottom: 1px solid #000; text-align: start">
+              <th
+                style="
+                  border-bottom: 1px solid #000;
+                  text-align: start;
+                  font-weight: bold;
+                "
+              >
                 Total payout
               </th>
-              <th style="border-bottom: 1px solid #000; text-align: start">
+              <th
+                style="
+                  border-bottom: 1px solid #000;
+                  text-align: center;
+                  font-weight: bold;
+             text-align:center;
+                "
+              >
                 $75
               </th>
             </tr>
 
-            <tr style="height: 30px; border-top: 20px solid">
+            <tr style="height: 20px; border-top: 20px solid">
               <td>Number of sessions</td>
-              <td>3</td>
+              <td style="text-align: center;">3</td>
             </tr>
-            <tr style="height: 30px; border-top: 20px solid">
+            <tr style="height: 20px; border-top: 20px solid">
               <td>Average price</td>
-              <td>$15</td>
+              <td style="text-align:center">$15</td>
             </tr>
-            <tr style="height: 30px; border-top: 20px solid">
+            <tr style="height: 20px; border-top: 20px solid">
               <td>Average turnout</td>
-              <td>5</td>
+              <td style="text-align:center" > 5</td>
             </tr>
-            <tr style="height: 30px; border-top: 20px solid">
+            <tr style="height: 20px; border-top: 20px solid">
               <td valign="top">Tax</td>
-              <td>- $75</td>
+              <td  style="text-align: center;">-$75</td>
             </tr>
 
-            <tr style="height: 30px; border-top: 20px solid">
+            <tr style="height: 20px; border-top: 20px solid">
               <td>VERSD fee</td>
-              <td>- $75</td>
+              <td style="text-align: center;">-$75</td>
             </tr>
           </table>
           <table border="0" width="100%">
@@ -190,12 +209,21 @@
                   font-family: SP-ProText;
                 "
               >
-                <p style="margin: 0px; text-decoration: underline">
+                <a
+                  style="color: #000"
+                  href="https://www.versd.com"
+                  target="blank"
+                >
                   Contact us
-                </p>
+                </a>
                 <p style="margin: 0px">
                   visit us
-                  <span style="text-decoration: underline">www.versd.co</span>
+                  <a
+                    style="color: #000"
+                    target="blank"
+                    href="https://www.versd.com"
+                    >www.versd.com</a
+                  >
                 </p>
                 <p style="margin: 0px">Versd Technologies Inc.</p>
               </td>
