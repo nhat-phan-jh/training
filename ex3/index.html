@@ -3,24 +3,46 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title></title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
     <style>
       @font-face {
         font-family: "SP-ProText";
-        src: url(./fonts/SF-Pro-Display-Regular.otf);
-        font-weight: 400;
-        font-style: normal;
+        src: url("http://db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.eot"); /* IE9*/
+        src: url("http://db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.eot?#iefix")
+            format("embedded-opentype"),
+          /* IE6-IE8 */
+            url("http://db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.woff2")
+            format("woff2"),
+          /* chrome firefox */
+            url("http://db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.woff")
+            format("woff"),
+          /* chrome firefox */
+            url("http://db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.ttf")
+            format("truetype"),
+          /* chrome firefox opera Safari, Android, iOS 4.2+*/
+            url("http://db.onlinewebfonts.com/t/1c45e28f8e86cc89876f003b953cc3e9.svg#SF Pro Text")
+            format("svg"); /* iOS 4.1- */
       }
-      @font-face {
+      /* @font-face {
         font-family: "Anton";
-        src: url(./fonts/Anton-Regular.ttf);
-        font-weight: 400;
         font-style: normal;
-      }
+        font-weight: 400;
+        font-display: swap;
+        src: url('https://fonts.gstatic.com/s/anton/v22/1Ptgg87LROyAm3Kz-C8.woff2')
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      } */
       @media only screen and (max-width: 380px) {
         #bodyTable {
           width: 100%;
         }
       }
+      @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap%27");
     </style>
   </head>
   <body>
@@ -40,7 +62,7 @@
             style="margin-bottom: 60px"
           >
             <tr>
-              <td align="center" valign="top" style="margin-bottom: 60px">
+              <td align="center" valign="top">
                 <img
                   style="
                     display: block;
@@ -49,19 +71,37 @@
 
                     margin-top: 67px;
                   "
-                  src="./assets/images/logo.png"
+                  src="https://i.ibb.co/1npfYfQ/logo.png"
                 />
               </td>
             </tr>
-         
           </table>
           <table cellpadding="0" cellspacing="0" height="100%" align="center">
             <tr>
-              <td align="center" valign="top">
-                <img
-                  style="display: block; width: 332px; height: 150px"
-                  src="assets//images/background.png"
-                />
+              <td>
+                <div style="width: 332px; height: 100px">
+                  <img
+                    style="display: block; width: 332px; height: 150px"
+                    src="https://i.ibb.co/TmzWdT2/background.png"
+                  />
+                </div>
+                <div style="width: 332px; height: 35px">
+                  <!-- <img
+                    style="display: block; width: 332px; height: 150px; "
+                    src="assets//images/background.png"
+                  /> -->
+                  <p
+                    style="
+                      text-align: start;
+                      margin-left: 30px;
+                      color: #fff;
+                      font-family: sans-serif;
+                      font-size: 18px;
+                    "
+                  >
+                    KENDRA JENNINGS
+                  </p>
+                </div>
               </td>
             </tr>
           </table>
@@ -83,10 +123,10 @@
                 >
                 <p
                   style="
-                    font-size: 22px;
+                    font-size: 20px;
                     color: #ffc95d;
                     margin-bottom: 20px;
-                    font-family: Anton;
+                    font-family: sans-serif;
                     font-weight: 400;
                     margin-right: 35px;
                   "
@@ -96,10 +136,11 @@
 
                 <p
                   style="
-                    font-size: 20px;
+                    font-size: 18px;
                     margin-bottom: 32px;
                     font-weight: 400;
-                    font-family: Anton;
+                    font-family: sans-serif;
+                    margin-right: 20px;
                   "
                 >
                   Thanks for being an inspiration to others
@@ -143,58 +184,104 @@
               </th>
             </tr>
 
-            <tr style="height: 20px; border-top: 20px solid">
+            <tr style="height: 35px; ">
               <td>Number of sessions</td>
               <td style="text-align: center">3</td>
             </tr>
-            <tr style="height: 20px; border-top: 20px solid">
+            <tr style="height: 35px; ">
               <td>Average price</td>
               <td style="text-align: center">$15</td>
             </tr>
-            <tr style="height: 20px; border-top: 20px solid">
+            <tr style="height: 35px; ">
               <td>Average turnout</td>
-              <td style="text-align: center">5</td>
+              <td style="text-align: center" valign="left">5</td>
             </tr>
-            <tr style="height: 20px; border-top: 20px solid">
-              <td valign="top">Tax</td>
-              <td style="text-align: center">-$75</td>
+            <tr style="height: 35px; ">
+              <td >Tax</td>
+              <td valign="left" style="text-align: center">-$75</td>
             </tr>
 
-            <tr style="height: 20px; border-top: 20px solid">
+            <tr style="height: 35px; ">
               <td>VERSD fee</td>
               <td style="text-align: center">-$75</td>
             </tr>
           </table>
           <table border="0" width="100%" align="center">
             <tr style="width: 100%">
-              <td style="padding: 0px; width: 102px; height: 104px">
-                <img
+              <td style="padding: 0px">
+                <div style="width: 102px; height: 30px">
+                  <img
+                    width="102px"
+                    height="104px"
+                    style="margin: 0px 5px 0px 18px"
+                    src="https://i.ibb.co/nM2rB27/Image-2.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  style="
+                    font-size: 15px;
+                    color: #fff;
+                    font-family: sans-serif;
+                    line-height: 35px;
+                  "
+                >
+                  <p style="margin: 0px; margin-left: 55px">
+                    X<span style="font-size: 25px">3</span>
+                  </p>
+                  <p style="margin: 0px; margin-left: 30px">TRICKING</p>
+                </div>
+              </td>
+                <td style="padding: 0px; ">
+                <div style="width: 102px; height: 30px">
+                  <img
                   width="102px"
                   height="104px"
-                  style="margin: 0px 5px 0px 25px"
-                  src="./assets/images/Group 3 3x.png"
+                  style="margin: 0px 5px 0px 10px"
+                  src="https://i.ibb.co/nM2rB27/Image-2.png"
                   alt=""
                 />
+                </div>
+                <div
+                  style="
+                    font-size: 15px;
+                    color: #fff;
+                    font-family: sans-serif;
+                    line-height: 35px;
+                  "
+                >
+                  <p style="margin: 0px; margin-left: 40px">
+                    X<span style="font-size: 25px">10</span>
+                  </p>
+                  <p style="margin: 0px; margin-left: 20px">BOXING</p>
+                </div>
               </td>
-              <td style="padding: 0px; width: 102px; height: 104px">
-                <img
+               <td style="padding: 0px">
+                <div style="width: 102px; height: 30px">
+                  <img
                   width="102px"
                   height="104px"
-                  style="margin: 0px 5px 0px 0px"
-                  src="./assets/images/Group 3 10x.png"
+                  style="margin: 0px 23px 0px 0px"
+                  src="https://i.ibb.co/nM2rB27/Image-2.png"
                   alt=""
                 />
+                </div>
+                <div
+                  style="
+                    font-size: 15px;
+                    color: #fff;
+                    font-family: sans-serif;
+                    line-height: 35px;
+                  "
+                >
+                  <p style="margin: 0px; margin-left: 40px">
+                    X<span style="font-size: 25px">1</span>
+                  </p>
+                  <p style="margin: 0px; margin-left: 10px">DANCING</p>
+                </div>
               </td>
-              <td style="padding: 0px; width: 102px; height: 104px">
-                <img
-                  width="102px"
-                  height="104px"
-                  style="margin: 0px 25px 0px 5pxpx"
-                  src="./assets/images/Group 3 1x.png"
-                  alt=""
-                />
-              </td>
-              <td></td>
+         
+           
             </tr>
           </table>
           <p
@@ -204,7 +291,7 @@
               width: 100%;
               margin-left: 24px;
               margin-top: 21px;
-              font-family: Anton;
+              font-family: sans-serif;
             "
           >
             Your students thank you!
