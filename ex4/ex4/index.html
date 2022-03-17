@@ -88,16 +88,22 @@
       .card-details {
         padding: 3px 6px;
       }
-      .mapboxgl-ctrl-geocoder--icon{
-display: none;
+      .mapboxgl-ctrl-geocoder--icon {
+        display: none;
+      }
+      .curent_loction{
+        position: absolute;
+        z-index: 100;
+        top :150px;
+        left: 20px;
       }
     </style>
   </head>
 
   <body>
     <div id="map">
-      <button class="curent_loction" onclick="current_location()">
-        location
+      <button class="curent_loction" onclick="showlocation()">
+        Chỉ Đường
       </button>
     </div>
     <!-- <div class="sidebar">
@@ -196,9 +202,11 @@ display: none;
         flyTo: false,
       });
 
-      map.addControl(directions, "top-right");
+    
+function showlocation(){
+  map.addControl(directions, "top-left");
       map.scrollZoom.enable();
-
+}
       const clearances = {
         type: "FeatureCollection",
         features: [
