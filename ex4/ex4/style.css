@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+.mapboxgl-popup-content {
+  bottom: 40px;
+}
+.mapboxgl-popup-tip {
+  border: 0px;
+}
+#input_search {
+  position: relative;
+  z-index: 100;
+  top: 50px;
+  left: 20px;
+  width: 250px;
+  border: none;
+  box-shadow: 10px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  outline: none;
+}
+.box_search {
+  position: relative;
+}
+#list_search {
+  background-color: #fff;
+  top: 70px;
+  left: 20px;
+  position: absolute;
+  width: 290px;
+  list-style: none;
+  padding: 0px;
+
+  
+}
+#list_search li{
+  padding: 10px 10px 10px 20px;
+}
+#list_search li:hover{
+  background-color:#A9A9A9 ;
+}
