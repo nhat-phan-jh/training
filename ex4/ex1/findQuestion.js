@@ -171,8 +171,6 @@ const setQuestion = () => {
   // console.log(document.getElementById("myTextarea").value.split(" ")[0]);
   //   console.log(document.getElementById("myTextarea").value);
 
-  console.log(parent);
-  console.log(listBack);
   let textChild = document.getElementById("myTextarea").value.split(" ")[0];
   if (!questions[`${textChild}`]) {
     questions[`${parent}`].childrens.push(textChild);

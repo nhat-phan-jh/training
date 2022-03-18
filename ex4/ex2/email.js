@@ -1,7 +1,8 @@
 const checkEmail = (email) => {
   if (email) {
-    var regularE = /^(([a-zA-Z0-9]+)([\.-_]?)([a-zA-Z0-9]+))+@[a-z]+\.[a-z]{2,4}$/;
+    var regularE =
+      /^([_]?)(([a-zA-Z0-9]+)([\.-_]?)([a-zA-Z0-9]+))+@[a-z]+\.[a-z]+$/;
     return regularE.test(email);
   }
 };
-console.log(checkEmail("nha_t1.phan@journeyh.io"));
+console.log(checkEmail("_nha_t1.phan@journeyh.infafsfafor"));
