@@ -1,6 +1,6 @@
 const checkEmail = (email) => {
   if (email) {
-    var regularE =
+    const regularE =
       /^([_]?)(([a-zA-Z0-9]+)([\.-_]?)([a-zA-Z0-9]+))+@[a-z]+\.[a-z]+$/;
     return regularE.test(email);
   }

@@ -1,7 +1,7 @@
 let array = [1,2,2,3,4,4,4,5,6];
 const removeDuplicateElement  = (arr)=>{
-    let obj = {};
-    let result  = [];
+    const obj = {};
+    const result  = [];
 
     for(let i = 0 ;i< arr.length;i++){
         if(!obj[arr[i]]){
@@ -9,15 +9,15 @@ const removeDuplicateElement  = (arr)=>{
             result.push(arr[i]);
         }
     }
-    console.log(result);
+    return result;
 }
 removeDuplicateElement(array);
 
 const removeDuplicateElement1 = (arr) => {
-  let result = [];
-
-  for (let i = 0; i < arr.length - 1; i++) {
+  const result = [];
     let count = 0;
+  for (let i = 0; i < arr.length - 1; i++) {
+
     for (let j = i + 1; j < arr.length; j++) {
       if (arr[i] === arr[j]) {
         count = 1;
@@ -30,7 +30,7 @@ const removeDuplicateElement1 = (arr) => {
       count = 0;
     }
   }
-  let count = 0;
+  count = 0;
   for (let i = 0; i < arr.length - 1; i++) {
     if (arr[i] === arr[arr.length - 1]) {
       count = 1;
@@ -40,13 +40,13 @@ const removeDuplicateElement1 = (arr) => {
   if (count === 0) {
     result.push(arr[arr.length - 1]);
   }
-  console.log(result);
+  return result;
 };
 removeDuplicateElement1(array);
 
 
 const removeDuplicateElement2 = (arr) => {
-  let arrTemp = [...arr];
+  const arrTemp = [...arr];
   for (let i = 0; i < arrTemp.length-1; i++) {
     for (let j = i + 1; j < arrTemp.length; j++) {
       if (arrTemp[i] === arrTemp[j]) {
@@ -55,6 +55,6 @@ const removeDuplicateElement2 = (arr) => {
       }
     }
   }
-  console.log(arrTemp);
+  return arrTemp;
 };
 removeDuplicateElement2(array);

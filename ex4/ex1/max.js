@@ -1,7 +1,7 @@
 let array = [1, 2, 2, 3, 4, 4, 4, 5, 2, 6, 8];
 const mostRepetitions = (arr) => {
-  let obj = {};
-  let result = [];
+  const obj = {};
+  const result = [];
   let max = arr[0];
 
   for (let i = 0; i < arr.length; i++) {
@@ -15,7 +15,7 @@ const mostRepetitions = (arr) => {
     }
   }
 
-  for (var number in obj) {
+  for (let number in obj) {
     if (obj[number] === max) {
       result.push(number);
     }

@@ -1,6 +1,6 @@
 const checkPassword = (password) => {
   if (password) {
-    var regularE = /^(?=.+[A-Z])(?=.+[!])(?=.+[a-z])(?=.+\d)[A-Za-z\d]{8,}$/;
+    const regularE = /^(?=.+[A-Z])(?=.+[!])(?=.+[a-z])(?=.+\d)[A-Za-z\d]{8,}$/;
     return regularE.test(password);
   }
 };

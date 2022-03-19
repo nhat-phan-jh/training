@@ -19,15 +19,14 @@ body {
   border: 0px;
 }
 #input_search {
-  position: relative;
-  z-index: 100;
-  top: 50px;
-  left: 20px;
-  width: 250px;
+  position: absolute;
+  z-index: 10;
+
+  width: 300px;
   border: none;
   box-shadow: 10px;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 10px 70px 10px 20px;
   outline: none;
 }
 .box_search {
@@ -38,15 +37,106 @@ body {
   top: 70px;
   left: 20px;
   position: absolute;
-  width: 290px;
+  width: 390px;
   list-style: none;
   padding: 0px;
-
-  
+    max-height: 300px;
+   overflow: auto;
 }
-#list_search li{
+#list_search li {
   padding: 10px 10px 10px 20px;
 }
-#list_search li:hover{
-  background-color:#A9A9A9 ;
+#list_search li:hover {
+  background-color: #a9a9a9;
+}
+#search_icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 30px;
+  z-index: 100;
+  top: 7px;
+}
+#direct_icon img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+
+  z-index: 110;
+  right: 5px;
+  top: 7px;
+  cursor: pointer;
+}
+#direct_icon {
+  cursor: pointer;
+}
+.wrap_search {
+  position: relative;
+  height: 50px;
+  width: 390px;
+  display: inline-block;
+  top: 30px;
+  left: 20px;
+}
+#box_direct {
+  position: relative;
+  height: 160px;
+  width: 390px;
+  background-color: #fff;
+  left: 20px;
+  top: -20px;
+  z-index: 1000;
+}
+#input_search_direct1,
+#input_search_direct2 {
+  position: absolute;
+  width: 280px;
+  right: 10px;
+  border-radius: 20px;
+  height: 30px;
+  outline: none;
+  padding: 0px 20px;
+}
+#input_search_direct1 {
+  top: 50px;
+}
+#input_search_direct2 {
+  top: 100px;
+}
+#icon_derect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 0px 0px 10px;
+}
+#close_direct img {
+  width: 20px;
+  height: 20px;
+}
+#close_direct {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+#list_direct {
+  width: 390px;
+  background-color: #fff;
+  list-style: none;
+  max-height: 300px;
+   overflow: auto;
+
+  padding-left: 0px;
+}
+#list_direct li {
+  padding: 10px 20px;
+  height: 30px;
+}
+#list_direct li:hover {
+  background-color: #a9a9a9;
+}
+hr {
+  margin: 0px;
 }

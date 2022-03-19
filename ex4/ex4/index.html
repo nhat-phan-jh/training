@@ -23,13 +23,57 @@
   <body>
     <div id="map"></div>
     <div class="box_search">
-      <input id="input_search" type="text" placeholder="Search" onchange="searchBox()">
-      <div >
-        <ul id="list_search">
-        
-        </ul>
-
+      <div class="wrap_search">
+        <input
+          id="input_search"
+          type="text"
+          placeholder="Search"
+          onchange="searchBox()"
+        />
+        <img
+          id="search_icon"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png"
+          alt=""
+        /><button onclick="setShowDirect()" id="direct_icon">
+          <img
+            src="https://maps.gstatic.com/tactile/omnibox/directions-2x-20150909.png"
+            alt=""
+          />
+        </button>
       </div>
+
+      <div>
+        <ul id="list_search"></ul>
+      </div>
+    </div>
+    <div id="box_direct">
+      <di id="icon_derect">
+        <p>From</p>
+        <p>To</p>
+      </di>
+      <button onclick="setColoseDirect()" id="close_direct">
+        <img
+          src="https://cdn.icon-icons.com/icons2/2518/PNG/512/x_icon_150997.png"
+          alt=""
+        />
+      </button>
+
+      <input
+        id="input_search_direct1"
+        type="text"
+        placeholder="Search"
+        onchange="fromBox()"
+      />
+      <input
+        id="input_search_direct2"
+        type="text"
+        placeholder="Search"
+        onclick="toBox()"
+      />
+      <hr>
+      <ul id="list_direct">
+      
+      </ul>
     </div>
     <script src="./index.js"></script>
   </body>

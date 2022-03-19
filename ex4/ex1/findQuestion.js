@@ -90,9 +90,9 @@ var questions = {
 // }
 // addelement();
 
-var ul = document.getElementById("list");
-var listBack = [];
-var parent = "headQuestion";
+let ul = document.getElementById("list");
+let listBack = [];
+let parent = "headQuestion";
 document.getElementById("title").innerHTML = "Trang chủ";
 for (let i = 0; i < questions.headQuestion.childrens.length; i++) {
   let li = document.createElement("li");
@@ -195,7 +195,7 @@ const setQuestion = () => {
     changeList(parent);
 
     document.getElementById("myTextarea").value = "";
-  }else{
-     alert("Câu hỏi đã tồn tại");
+  } else {
+    alert("Câu hỏi đã tồn tại");
   }
 };
