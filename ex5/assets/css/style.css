@@ -397,12 +397,16 @@ left: 43%;
 .side_navigator {
   display: none;
 }
+.footer {
+  min-width: 320px;
+}
 .footer .list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   padding: var(--padding-mobile);
   padding-right: 30px;
+ 
 }
 .footer .list ul {
   list-style: none;
@@ -504,6 +508,7 @@ left: 43%;
     display: none;
   }
   .header_content_mail {
+    cursor: pointer;
     display: block;
     position: absolute;
     top: 25px;
@@ -564,7 +569,8 @@ left: 34%;
   .center_wrap {
     margin-top: -280px;
     background-image: url(/assets/images/Layer2.png);
-    background-size: 50% 100%;
+    background-size: 50% 95%;
+  
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
