@@ -42,19 +42,18 @@ body {
   background-color: var(--background-color);
   transition: all 1s;
 }
-.header_menu_mini_ul{
+.header_menu_mini_ul {
   padding: 0px;
   list-style: none;
 }
-.header_menu_mini_ul li{
- font-family: "Montserrat", sans-serif;
- padding: 20px 0px;
+.header_menu_mini_ul li {
+  font-family: "Montserrat", sans-serif;
+  padding: 20px 0px;
 }
 #show_menu {
   display: none;
 }
-#show_menu:checked~.header_menu_mini {
-
+#show_menu:checked ~ .header_menu_mini {
   left: 0px;
 }
 /* #show_menu:checked ~.label_hamberger {
@@ -88,23 +87,21 @@ left: 43%;
 .header_navigator p img {
   transform: rotate(90deg);
 }
-.header .label_hamberger{
+.header .label_hamberger {
   position: absolute;
-    z-index: 10;
-
+  z-index: 10;
 }
-.label_hamberger_mini{
+.label_hamberger_mini {
   position: absolute;
   right: 10px;
   top: 0px;
 }
 .header_hamberger {
-
   width: 20px;
 
   height: 14px;
   padding: 20px 10px;
- 
+
   cursor: pointer;
 }
 .header_text_sidebar_p_big {
@@ -457,14 +454,12 @@ left: 43%;
     /* letter-spacing: 10px; */
   }
   .header_menu_mini {
-
-  left: -50%;
-  width: 50%;
-
-}
-#show_menu:checked ~.label_hamberger_mini{
-left: 38%;
-}
+    left: -50%;
+    width: 50%;
+  }
+  #show_menu:checked ~ .label_hamberger_mini {
+    left: 38%;
+  }
 }
 @media only screen and (min-width: 768px) {
   .header_navigator {
@@ -523,12 +518,10 @@ left: 38%;
     font-size: 10px;
   }
   .header_menu_mini {
-
-  left: -40%;
-  width: 40%;
-
-}
-/* #show_menu:checked ~label{
+    left: -40%;
+    width: 40%;
+  }
+  /* #show_menu:checked ~label{
 left: 34%;
 } */
   .center_image_content_date {
@@ -573,7 +566,7 @@ left: 34%;
     background-image: url(/assets/images/Layer2.png);
     background-size: 50% 100%;
     background-repeat: no-repeat;
-       background-attachment: fixed;
+    background-attachment: fixed;
   }
 
   .side_navigator {
@@ -635,6 +628,9 @@ left: 34%;
   .mySlides .image_img {
     min-width: 200px;
   }
+  .mySlides_bottom .image_img {
+    width: 200px;
+  }
   .mySlides .image::before {
     width: 10px;
     height: 10px;
@@ -645,13 +641,14 @@ left: 34%;
   .mySlides .image {
     width: 100%;
     position: relative;
-    background-image: url(/assets/images/carouselImage.png);
-    background-position: bottom;
-    background-size: cover;
+    /* background-image: url(/assets/images/carouselImage.png); */
+    /* background-position: bottom;
+    background-size: cover; */
     width: 100%;
     height: 100px;
     min-width: 200px;
   }
+
   .carousel_text {
     position: relative;
     background-color: var(--text-color);
@@ -683,6 +680,7 @@ left: 34%;
     flex-shrink: initial;
     position: relative;
     transition: all 1s;
+
     /* width: 100%; */
   }
   .mySlides_bottom {
@@ -694,9 +692,9 @@ left: 34%;
   .mySlides_bottom .image {
     width: 100%;
     position: relative;
-    background-image: url(/assets/images/carouselImage.png);
-    background-position: bottom;
-    background-size: cover;
+    /* background-image: url(/assets/images/carouselImage.png); */
+    /* background-position: bottom;
+    background-size: cover; */
     width: 100%;
     height: 100px;
   }
@@ -720,7 +718,7 @@ left: 34%;
     background-size: 50% 100%;
     background-repeat: no-repeat;
     background-position: right;
-      background-attachment: fixed;
+    background-attachment: fixed;
   }
   .center {
     margin-top: -240px;
