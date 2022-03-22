@@ -1,44 +1,24 @@
-let slideStart = 0;
-let slideEnd = 2;
 const length = document.getElementsByClassName("mySlides").length;
-showSlides(slideStart, slideEnd);
+const lengthBottom = document.getElementsByClassName("mySlides_bottom").length;
+const carousel = document.getElementsByClassName("carousel");
+const carouselBottom = document.getElementsByClassName("carousel_bottom");
+const bordercarousel = document.getElementsByClassName("border_carousel");
+console.log(bordercarousel[0].style.width);
+carousel[0].style.width = `${length * 220}px`;
 
-// Next/previous controls
-function previewSlides(n) {
-  if (slideStart > 0) {
-    slideEnd--;
-    slideStart--;
-    showSlides(slideStart, slideEnd);
-  }
+function changeSlide() {
+  const subValue = carousel[0].style.marginLeft.slice(
+    0,
+    carousel[0].style.marginLeft.length - 2
+  );
+
+  carousel[0].style.marginLeft = `${subValue - 220}px`;
 }
-function nextSlides(n) {
-  if (slideEnd < length - 1) {
-    slideEnd++;
-    slideStart++;
-    showSlides(slideStart, slideEnd);
-  }
-}
-// Thumbnail image controls
-
-function showSlides(start, end) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-
-  if (end - start > slides.length) {
-    end = slides.length - 1;
-  }
-  if (end - start < 1) {
-    end = start;
-  }
-  for (i = 0; i < slides.length; i++) {
-    if (i < start || i > end) {
-      slides[i].style.display = "none";
-    } else {
-      slides[i].style.display = "block";
-    }
-  }
-  //   for (i = 0; i < dots.length; i++) {
-  //     dots[i].className = dots[i].className.replace(" active", "");
-  //   }
-  //   slides[slideIndex - 1].style.display = "block";
+function changeSlideBottom() {
+  const subValue = carouselBottom[0].style.marginLeft.slice(
+    0,
+    carouselBottom[0].style.marginLeft.length - 2
+  );
+console.log(subValue);
+  carouselBottom[0].style.marginLeft = `${subValue - 220}px`;
 }
