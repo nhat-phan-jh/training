@@ -281,6 +281,7 @@ left: 43%;
 .center_image {
   position: relative;
   background-image: url(/assets/images/imageCenter.png);
+  background-color: var(--background-color);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
