@@ -25,6 +25,7 @@ p {
   --font-title: 15px;
   --font-header-big: 55px;
   --lineHeight-header-big: 55px;
+  --font-title-side-bar : 12px
 }
 body {
   background-color: var(--background-color);
@@ -116,7 +117,7 @@ left: 43%;
 }
 .header_text_sidebar_p_big {
   font-family: "Montserrat", sans-serif;
-  font-size: var(--font-title);
+  font-size: var(--font-title-side-bar);
   line-height: 40px;
   /* padding-right: 10px; */
 }
@@ -615,6 +616,7 @@ left: 43%;
     --font-p-10: 10px;
     --font-title: 15px;
     --font-header-big: 100px;
+  
   }
   .header_navigator {
     width: 50px;
@@ -770,7 +772,7 @@ right: -30px;
      left: -110px; */
     z-index: 1000;
     position: relative;
-    left: -15px;
+    left: 0px;
     top: -80px;
   }
   .side_navigator p {
@@ -1080,6 +1082,7 @@ overflow: hidden;
     --font-title: 20px;
     --font-header-big: 132px;
     --lineHeight-header-big: 120px;
+       --font-title-side-bar : 17px;
   }
   .center_image h1 {
     width: 660px;
