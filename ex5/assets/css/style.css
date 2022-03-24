@@ -1060,7 +1060,7 @@ overflow: hidden;
     cursor: pointer;
     color: var(--text-color);
     height: 50%;
-    font-size: 50px;
+    font-size: 30px;
   }
   .list_contact {
     display: block;
