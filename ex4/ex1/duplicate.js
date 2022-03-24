@@ -1,4 +1,4 @@
-let array = [1,2,2,3,4,4,4,5,6];
+let array = [7,7,1,2,2,3,4,4,4,5,6];
 const removeDuplicateElement  = (arr)=>{
     const obj = {};
     const result  = [];
@@ -58,3 +58,16 @@ const removeDuplicateElement2 = (arr) => {
   return arrTemp;
 };
 removeDuplicateElement2(array);
+
+
+const removeDuplicateElement3 = (arr) => {
+  const arrTemp = [...arr];
+
+  var result = arrTemp.reduce(function (a, b) {
+    if (a.indexOf(b) < 0) a.push(b);
+    return a;
+  }, []);
+ 
+  return result;
+};
+console.log( removeDuplicateElement3(array));

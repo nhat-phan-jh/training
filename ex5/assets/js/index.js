@@ -5,7 +5,25 @@ const border_carousel = document.getElementsByClassName("border_carousel");
 
 const carouselBottom = document.getElementsByClassName("carousel_bottom");
 const bordercarousel = document.getElementsByClassName("border_carousel");
-console.log(bordercarousel[0].style.width);
+const hiddenCarousel = document.getElementsByClassName("hiden_carousel");
+// console.log(
+//   "hidden",
+//   hiddenCarousel[0].style.width,
+ 
+//   hiddenCarousel[0].clientWidth
+// );
+// hiddenCarousel[0].style.width=`${hiddenCarousel[0].clientWidth -50}px`; 
+// console.log(
+//   "hidden",
+//   hiddenCarousel[0].style.width,
+//   hiddenCarousel[0].clientWidth
+// );
+
+// console.log(bordercarousel[0].style.width);
+
+
+
+
 carousel[0].style.width = `${length * 245}px`;
 carouselBottom[0].style.width = `${lengthBottom * 245}px`;
 carouselBottom[0].style.marginLeft = "";
