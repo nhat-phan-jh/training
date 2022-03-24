@@ -357,8 +357,9 @@ left: 43%;
   font-weight: 700;
   font-size: var(--font-header-big);
   line-height: var(--lineHeight-header-big);
-  margin-top: 80px;
+  margin-top: 0px;
   width: 300px;
+  margin-bottom: 0px;
 }
 .center_image_only {
   position: absolute;
