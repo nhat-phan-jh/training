@@ -39,7 +39,7 @@
 # 4. log ,checkout ,reset ,Revert ,push ,fetch ,merge ,Pull request,Resolve conflict
 
 - Git checkout - filename, we can delete files before adding to staging.
-- Git checkout - b "name branch", we can create a new branch.  
+- Git checkout - b "name branch", we can create a new branch.
 - Git checkout - d "name branch", we can delete a branch.
 
 - Git reset --Soft back to staging area state after using git add.
@@ -72,45 +72,56 @@
 - Speed up the review process.
 - Note: the message cannot exceed 50 characters
   git commit -m "[GENERAL ACTION] - [DETAILS] - [NOTE IF YES]"
+
 # 7. List of possible issues when a commit is broken
+
 It allows you to combine staged changes with the previous commit as an alternative for creating an entirely new commit
 
 # 8. Explain the nature of a branch in Git and Can use it to outline a list of possible issues when a branch has problems
 
 - When a brand has a problem, we can check the list of commits to find the reason for that we can easily resolve the problem.
- 
+
 # 9. What could cause code conflicts and produce a checklist of possible causes
 
 - Merge code, Pull, cherry pick, stash, rebase.
-+ Git cherry picking
+
+* Git cherry picking
   Is a way to check out any commit at a specified branch to the current branch. Or git cherry-pick will pick up the changes of a commit on a certain branch and apply it to the current branch.
-+ stash
+* stash
   you don't want to commit yet and want to switch to another branch, git will ask you to commit the changes before switching branch.
 
 # 10. Explain the difference between merge and rebase and can combine the good and bad of merge and rebase when working on a project
 
 - Git Rebase is a function used when linking the completed branch to the root
 - Git Merge is the command used to merge independent branches into a single branch in Git
-  |   Rebase |Merge |
+  | Rebase |Merge |
   |----------------------------------------------|-----------------------------------------------|
   |The branch commit will be completely recorded |The branch commit will be completely unrecorded|
   |shorter commit list| longer commit list|
 
 - Git rebase should be used on its own branch, it will display the commit history of the branch, the commit history will be distinguished from the commits from other branches, very convenient for branch management.
 
-
 # 11. Select situation to use merge
+
 - When a feature is complete We want to merge it with the master branch.
 - Resolve conflicts between 2 branches.
 
 # 12. If we have a feature branch that haven't been merged to production and that branch have bug,what course of action are you going to do with Git to before resolving the bug?
-- When client ask detail report , we need  a most accurate report and Guaranteed complete features with no errors, so that the current workflow ensures this.
+
+- When client ask detail report , we need a most accurate report and Guaranteed complete features with no errors, so that the current workflow ensures this.
+
 # 13. When we are creating new feature, what branch should we based on and why?
+
 - we should create a new branch when we want to create a new feature and we should rely on master branch because it is less buggy and more considered when merging
+
 # 14. If we have a feature branch that haven't been merged to production and that branch have bug ,what course of action are you going to do with Git to before resolving the bug?
+
 - Checkout production branch
 - I will pull the code,
 - Checkout feature branch
-- Using git merge command to resolve the problem 
+- Using git merge command to resolve the problem
+
 # 15. If someone accidentally merge a feature (feature/delete-user) onto production and have a list of commitId ended with (0492978,fc9348c, k101100), then another commit (a1fsas8) is added on top of the production branch. How do we remove that merged feature?
+
 - Using git reset --soft command to move commit (0492978,fc9348c, k101100) to staging area.
+# 12
