@@ -72,9 +72,10 @@
 - Speed up the review process.
 - Note: the message cannot exceed 50 characters
   git commit -m "[GENERAL ACTION] - [DETAILS] - [NOTE IF YES]"
-# 7.
+# 7. List of possible issues when a commit is broken
+It allows you to combine staged changes with the previous commit as an alternative for creating an entirely new commit
 
-# 8.Explain the nature of a branch in Git and Can use it to outline a list of possible issues when a branch has problems
+# 8. Explain the nature of a branch in Git and Can use it to outline a list of possible issues when a branch has problems
 
 - When a brand has a problem, we can check the list of commits to find the reason for that we can easily resolve the problem.
  
