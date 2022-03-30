@@ -97,4 +97,17 @@ Git rebase should be used on its own branch, it will display the commit history 
 # 12 
 # 14 When we are creating new feature, what branch should we based on and why?
 - we should create a new branch when we want to create a new feature and we should rely on master branch because it is less buggy and more considered when merging
-# 15  
+# 16 If we have a feature branch that haven't been merged to production and that branch have bug,
+what course of action are you going to do with Git to before resolving the bug?
+- Checkout production branch
+- I will pull the code,
+- Checkout feature branch
+- Using git merge command to resolve the problem 
+# 17 If we have a feature branch that haven't been merged to production and that branch have bug,
+what course of action are you going to do with Git to before resolving the bug?
+- Checkout production branch
+- I will pull the code,
+- Checkout feature branch
+- Using git merge command to resolve the problem 
+# 18 If someone accidentally merge a feature (feature/delete-user) onto production and have a list of commitId ended with (0492978,fc9348c, k101100), then another commit (a1fsas8) is added on top of the production branch. How do we remove that merged feature?
+- Using git revert command to remove commit (0492978,fc9348c, k101100)
