@@ -125,4 +125,5 @@ It allows you to combine staged changes with the previous commit as an alternati
 
 - Using git reset --soft command to move commit (0492978,fc9348c, k101100) to staging area.
 # 12
- # 13
+# 13
+# 14
