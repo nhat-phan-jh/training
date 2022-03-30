@@ -122,3 +122,4 @@ It allows you to combine staged changes with the previous commit as an alternati
 # 15. If someone accidentally merge a feature (feature/delete-user) onto production and have a list of commitId ended with (0492978,fc9348c, k101100), then another commit (a1fsas8) is added on top of the production branch. How do we remove that merged feature?
 - Using git reset --mixed command to move commit (0492978,fc9348c, k101100) to working directory.
 
+# 1
