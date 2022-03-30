@@ -76,17 +76,16 @@
 
 # 8.
 
-# 9.
  
-# 10. What could cause code conflicts and produce a checklist of possible causes
+# 9. What could cause code conflicts and produce a checklist of possible causes
 
--     Merge code, Pull, cherry pick, stash, rebase.
-  Git cherry picking
+- Merge code, Pull, cherry pick, stash, rebase.
++ Git cherry picking
   Is a way to check out any commit at a specified branch to the current branch. Or git cherry-pick will pick up the changes of a commit on a certain branch and apply it to the current branch.
-- stash
++ stash
   you don't want to commit yet and want to switch to another branch, git will ask you to commit the changes before switching branch.
 
-# 11. Explain the difference between merge and rebase and can combine the good and bad of merge and rebase when working on a project
+# 10. Explain the difference between merge and rebase and can combine the good and bad of merge and rebase when working on a project
 
 - Git Rebase is a function used when linking the completed branch to the root
 - Git Merge is the command used to merge independent branches into a single branch in Git
@@ -98,17 +97,18 @@
 - Git rebase should be used on its own branch, it will display the commit history of the branch, the commit history will be distinguished from the commits from other branches, very convenient for branch management.
 
 
-# 12 Select situation to use merge
+# 11. Select situation to use merge
+- When a feature is complete We want to merge it with the master branch.
+- Resolve conflicts between 2 branches.
 
-
-# 13 	If we have a feature branch that haven't been merged to production and that branch have bug,what course of action are you going to do with Git to before resolving the bug?
+# 12. If we have a feature branch that haven't been merged to production and that branch have bug,what course of action are you going to do with Git to before resolving the bug?
 - When client ask detail report , we need  a most accurate report and Guaranteed complete features with no errors, so that the current workflow ensures this.
-# 14 When we are creating new feature, what branch should we based on and why?
+# 13. When we are creating new feature, what branch should we based on and why?
 - we should create a new branch when we want to create a new feature and we should rely on master branch because it is less buggy and more considered when merging
-# 15 If we have a feature branch that haven't been merged to production and that branch have bug ,what course of action are you going to do with Git to before resolving the bug?
+# 14. If we have a feature branch that haven't been merged to production and that branch have bug ,what course of action are you going to do with Git to before resolving the bug?
 - Checkout production branch
 - I will pull the code,
 - Checkout feature branch
 - Using git merge command to resolve the problem 
-# 16 If someone accidentally merge a feature (feature/delete-user) onto production and have a list of commitId ended with (0492978,fc9348c, k101100), then another commit (a1fsas8) is added on top of the production branch. How do we remove that merged feature?
+# 15. If someone accidentally merge a feature (feature/delete-user) onto production and have a list of commitId ended with (0492978,fc9348c, k101100), then another commit (a1fsas8) is added on top of the production branch. How do we remove that merged feature?
 - Using git revert command to remove commit (0492978,fc9348c, k101100)
