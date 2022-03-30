@@ -74,8 +74,9 @@
   git commit -m "[GENERAL ACTION] - [DETAILS] - [NOTE IF YES]"
 # 7.
 
-# 8.
+# 8.Explain the nature of a branch in Git and Can use it to outline a list of possible issues when a branch has problems
 
+- When a brand has a problem, we can check the list of commits to find the reason for that we can easily resolve the problem.
  
 # 9. What could cause code conflicts and produce a checklist of possible causes
 
