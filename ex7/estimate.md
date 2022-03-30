@@ -123,3 +123,4 @@ It allows you to combine staged changes with the previous commit as an alternati
 - Using git reset --mixed command to move commit (0492978,fc9348c, k101100) to working directory.
 
 # 1
+# 2
