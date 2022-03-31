@@ -10,19 +10,12 @@ carouselBottom[0].style.marginLeft = "";
 //input of function is 1 or -1 if 1 it will slide left else it will silde right
 function changeSlide(value) {
   if (value === 1) {
-    const widthCarousel = parseInt(
-      carousel[0].style.width.slice(0, carousel[0].style.width.length - 2)
-    );
+    const widthCarousel = ConvertPxToNumber(carousel[0].style.width);
+
     const widthShowContent = borderCarousel[0].clientWidth;
     if (carousel[0].style.marginLeft.length !== 0) {
-      //remove pixels and characters of margin left to parse int
-      let marginLeftOfCarosel = carousel[0].style.marginLeft.slice(
-        1,
-        carousel[0].style.marginLeft.length - 2
-      );
-      //remove pixels and characters of margin left to parse int
-      marginLeftOfCarosel = parseInt(marginLeftOfCarosel);
-
+  
+      let marginLeftOfCarosel = ConvertPxToNumber(carousel[0].style.marginLeft);
       const subResult = widthCarousel - widthShowContent - marginLeftOfCarosel;
       // if subResult > 0 it mean carousel can move to left
       if (subResult > 0) {
@@ -41,12 +34,9 @@ function changeSlide(value) {
     }
   } else {
     if (carousel[0].style.marginLeft.length !== 0) {
-      //remove pixels and characters of margin left to parse int
-      let marginLeftOfCarosel = carousel[0].style.marginLeft.slice(
-        1,
-        carousel[0].style.marginLeft.length - 2
+      const marginLeftOfCarosel = ConvertPxToNumber(
+        carousel[0].style.marginLeft
       );
-      marginLeftOfCarosel = parseInt(marginLeftOfCarosel);
       // sub marginLeft to slide casousel
       carousel[0].style.marginLeft = `-${marginLeftOfCarosel - WIDTH_SLIDE}px`;
       if (carousel[0].style.marginLeft === "0px") {
@@ -58,3 +48,15 @@ function changeSlide(value) {
     }
   }
 }
+
+const ConvertPxToNumber = (value) => {
+  if (typeof value === "string") {
+    if (value[0] === "-") {
+      value = value.slice(1, value.length - 2);
+    } else {
+      value = value.slice(0, value.length - 2);
+    }
+    return parseInt(value);
+  }
+  return 0;
+};
