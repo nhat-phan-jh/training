@@ -12,6 +12,8 @@ data hiding ensures exclusive data access for class members and protects object 
 
 data hiding ensures exclusive data access for class members and protects object integrity by preventing unintended or intended changes.
 
+# 
+
 # The coding convention and encapsulation theory to write a code that is easy to debug
 
 - Adding comments to my code,
@@ -145,4 +147,6 @@ class SecretProject {
 
 Having to build code is time-consuming and expensive.
 After a long time with errors, we can easily read and correct the code in the previous steps easily.
+
+
 

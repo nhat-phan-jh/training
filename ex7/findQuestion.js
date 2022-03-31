@@ -1,4 +1,3 @@
-
 var questions = {
   headQuestion: {
     childrens: ["diChoi", "anUong"],
