@@ -71,7 +71,7 @@ return a - b;
 6. get variable name by camelCase
 7. Meaningful naming
 8. Prefer a detailed description rather than a brief
-   // Bad practice
+```  // Bad practice
    const findUser
 
 // Good practice
@@ -80,8 +80,9 @@ const findUserByPhoneOrEmail
 
 // shorter version
 const getUserFromDatabase
-
+```
 9. Use consistent verbs for each concept
+```
    // Bad practice
    function getUserEmail() {
    // do something
@@ -97,8 +98,9 @@ function getUserEmail() {
 function getUserPhone() {
 // do something
 }
-
+```
 10. Make Boolean variable names more specific in if-then statements
+```
     // Bad practice
     let car = {};
     car.sedan, car.sold, car.green, car.airbag;
@@ -108,8 +110,11 @@ let car = {};
 car.isSedan, car.isSold, car.isGreen, car.hasAirbag; 11. Use nouns when naming classes and apply Pascal Case's rule
 class SecretProject {
 // do something
-} 12. Capitalize constant values
-const DAYS_IN_A_YEAR = 365; 13. avoid naming variables with a letter
+```
+} 
+12. Capitalize constant values
+``` const DAYS_IN_A_YEAR = 365; ```
+13. avoid naming variables with a letter
 
 # How much effort would be spent to refactor messed up codes and can explain why we should try to make our codes readable at the start
 
