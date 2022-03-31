@@ -35,25 +35,28 @@ data hiding ensures exclusive data access for class members and protects object 
 
 1. Magic numbers
 
-```// Bad practice
+`// Bad practice
    for (let i = 0; i < 60; i++) {
    // do something
    }
-
+`
+`
 // Good practice
 const MINUTES_OF_THE_HOUR = 60;
 for (let i = 0; i < MINUTES_OF_THE_HOUR; i++) {
 // do something
-}```
-  2. Avoid using multiple nested loops 
-  3. regardless of comments 
-  4. Writing function is too long should be divided into several parts
-  ```
+}
+`
+2. Avoid using multiple nested loops 
+3. regardless of comments 
+4. Writing function is too long should be divided into several parts
+  `
 // Bad practice
 const addSub = (a, b) => {
 // add
 const addition = a + b;
 
+`
 // sub
 const sub = a - b;
 
@@ -71,12 +74,13 @@ return a + b;
 const sub = (a, b) => {
 return a - b;
 };
-```
+`
+
 5. Avoid repeating code
 6. get variable name by camelCase
 7. Meaningful naming
 8. Prefer a detailed description rather than a brief
-``` 
+`
  // Bad practice
    const findUser
 
@@ -86,11 +90,11 @@ const findUserByPhoneOrEmail
 
 // shorter version
 const getUserFromDatabase
-````
+`
 
 9. Use consistent verbs for each concept
 
-```
+`
    // Bad practice
    function getUserEmail() {
    // do something
@@ -106,23 +110,26 @@ function getUserEmail() {
 function getUserPhone() {
 // do something
 }
-```
+`
 
 10. Make Boolean variable names more specific in if-then statements
 
-```
+`
     // Bad practice
     let car = {};
     car.sedan, car.sold, car.green, car.airbag;
 
 // Good practice
 let car = {};
-car.isSedan, car.isSold, car.isGreen, car.hasAirbag; 11. Use nouns when naming classes and apply Pascal Case's rule
+car.isSedan, car.isSold, car.isGreen, car.hasAirbag; 
+`
+11. Use nouns when naming classes and apply Pascal Case's rule
+`
 class SecretProject {
 // do something
-```
-
-} 12. Capitalize constant values
+} 
+`
+12. Capitalize constant values
 `const DAYS_IN_A_YEAR = 365;` 13. avoid naming variables with a letter
 
 # How much effort would be spent to refactor messed up codes and can explain why we should try to make our codes readable at the start
