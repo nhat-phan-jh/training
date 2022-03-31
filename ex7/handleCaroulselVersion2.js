@@ -1,10 +1,7 @@
 const COUNT_MY_SLIDES = document.getElementsByClassName("mySlides").length;
-const COUNT_MY_SLIDE_BOTTOM =
-  document.getElementsByClassName("mySlides_bottom").length;
 const WIDTH_SLIDE = 300;
 const carousel = document.getElementsByClassName("carousel");
 const borderCarousel = document.getElementsByClassName("borderCarousel");
-const carouselBottom = document.getElementsByClassName("carouselBottom");
 const hiddenCarousel = document.getElementsByClassName("hidenCarousel");
 carousel[0].style.width = `${COUNT_MY_SLIDES * WIDTH_SLIDE}px`;
 carouselBottom[0].style.width = `${COUNT_MY_SLIDE_BOTTOM * WIDTH_SLIDE}px`;

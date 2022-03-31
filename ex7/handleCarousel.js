@@ -1,9 +1,6 @@
 const length = document.getElementsByClassName("mySlides").length;
-const lengthBottom = document.getElementsByClassName("mySlides_bottom").length;
 const carousel = document.getElementsByClassName("carousel");
 const borderCarousel = document.getElementsByClassName("border_carousel");
-
-const carouselBottom = document.getElementsByClassName("carousel_bottom");
 const bordercarousel = document.getElementsByClassName("border_carousel");
 const hiddenCarousel = document.getElementsByClassName("hiden_carousel");
 
